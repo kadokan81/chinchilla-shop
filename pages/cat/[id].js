@@ -30,6 +30,6 @@ export async function getStaticPaths() {
 	const cat = await getCats();
 	return {
 		paths: cat.map(({ node: { id } }) => ({ params: { id } })),
-		fallback: true, // See the "fallback" section below
+		fallback: false, // See the "fallback" section below
 	};
 }

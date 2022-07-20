@@ -75,6 +75,6 @@ export async function getStaticPaths() {
 	const kitty = await getKittys();
 	return {
 		paths: kitty.map(({ node: { id } }) => ({ params: { id } })),
-		fallback: true, // See the "fallback" section below
+		fallback: false, // See the "fallback" section below
 	};
 }
