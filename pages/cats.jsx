@@ -10,7 +10,11 @@ const CatsPage = ({ cats }) => {
 				<Link href={`cat/${cat.node.id}`} key={cat.node.name}>
 					<CatCart>
 						<div className='img-link'>
-							<img src={cat.node.photo[0].url} width='200px' />
+							<img
+								src={cat.node.photo[0].url}
+								width='200'
+								alt={cat.node.breed}
+							/>
 						</div>
 
 						<div className='cart-content'>

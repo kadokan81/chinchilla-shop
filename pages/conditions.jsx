@@ -8,7 +8,7 @@ const ConditionsPage = () => {
 	return (
 		<SectionMain>
 			<Container>
-				<h2>What's in a "cat contract?"</h2>
+				<h2>What's in a cat contract?</h2>
 				<p>
 					The basic agreement is to provide a live, healthy kitten for
 					consideration. The understanding is that the cat is not for breeding
