@@ -1,10 +1,16 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { SwiperThumb } from '../../components';
 import { Container } from '../../components/styledcomponents/Container';
 import { GraphLine } from '../../components/styledcomponents/GraphLine';
 import { getKittyDetails, getKittys } from '../../services';
 
 const KittyPage = ({ kitty }) => {
+	const router = useRouter();
+
+	if (router.isFallback) {
+		return <Loader />;
+	}
 	const {
 		name,
 		breed,

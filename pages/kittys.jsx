@@ -11,7 +11,6 @@ const Kittys = ({ kittys }) => {
 						<div className='img-link'>
 							<img src={kitty.node.photo[0].url} />
 						</div>
-
 						<div>
 							<h2 className='cart-content__title'>
 								<span>Breed: </span>

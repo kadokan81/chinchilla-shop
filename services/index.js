@@ -81,9 +81,7 @@ export const getCatById = async (id) => {
 				name
 				title
 				breed
-
 				gender
-
 				photo {
 					url
 				}

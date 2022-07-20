@@ -1,8 +1,15 @@
+import { useRouter } from 'next/router';
 import { SwiperThumb } from '../../components';
+import Loader from '../../components/Loader';
 import { Container } from '../../components/styledcomponents/Container';
 import { getCatById, getCats } from '../../services';
 
 const CatCart = ({ cat }) => {
+	const router = useRouter();
+
+	if (router.isFallback) {
+		return <Loader />;
+	}
 	const { name, breed, gender, title, photo } = cat;
 	return (
 		<Container>
