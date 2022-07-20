@@ -1,8 +1,5 @@
 import { Container } from '../components/styledcomponents/Container';
-import {
-	MainContent,
-	SectionMain,
-} from '../components/styledcomponents/SectionMain';
+import { SectionMain } from '../components/styledcomponents/SectionMain';
 
 const ConditionsPage = () => {
 	return (

@@ -40,10 +40,7 @@ const Header = () => {
 				</menu>
 				<div className='links'>
 					<a href='tel:+48 792 856 627'>+48 792 856 627</a>
-					<a
-						href='https://www.facebook.com'
-						target='_blank'
-						rel='https://www.facebook.com'>
+					<a href='https://www.facebook.com' target='_blank' rel='noreferrer'>
 						<svg
 							width='25'
 							height='24'
@@ -56,7 +53,7 @@ const Header = () => {
 							/>
 						</svg>
 					</a>
-					<a href='https://www.instagram.com/' target='_blank'>
+					<a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
 						<svg
 							width='25'
 							height='24'

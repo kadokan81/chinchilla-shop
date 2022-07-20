@@ -33,10 +33,7 @@ const Footer = () => {
 					/>
 				</svg>
 			</a>
-			<a
-				href='https://www.facebook.com'
-				target='_blank'
-				rel='https://www.facebook.com'>
+			<a href='https://www.facebook.com' target='_blank' rel='noreferrer'>
 				<svg
 					width='36'
 					height='34'
@@ -49,10 +46,7 @@ const Footer = () => {
 					/>
 				</svg>
 			</a>
-			<a
-				href='https://www.instagram.com/'
-				target='_blank'
-				rel='https://www.instagram.com/'>
+			<a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
 				<svg
 					width='36'
 					height='34'
