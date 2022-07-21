@@ -9,7 +9,7 @@ const Header = () => {
 	return (
 		<HeaderStyled>
 			<ContainerHeader className='header-cnt'>
-				<div>
+				<div className='main-logo'>
 					<Link href={'/'}>
 						<svg
 							width='48'

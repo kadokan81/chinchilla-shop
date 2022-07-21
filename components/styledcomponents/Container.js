@@ -23,4 +23,7 @@ export const ContainerHeader = styled.div`
 	display: flex;
 
 	justify-content: space-between;
+	.main-logo {
+		cursor: pointer;
+	}
 `;
