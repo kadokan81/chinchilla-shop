@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { MainIconCat } from './MainIconCat';
 import { ContainerHeader } from './styledcomponents/Container';
 import { HeaderStyled } from './styledcomponents/HeaderStyled';
 
@@ -12,8 +13,8 @@ const Header = () => {
 				<div className='main-logo'>
 					<Link href={'/'}>
 						<svg
-							width='48'
-							height='48'
+							width='30'
+							height='30'
 							viewBox='0 0 48 48'
 							fill='none'
 							xmlns='http://www.w3.org/2000/svg'>
@@ -40,7 +41,10 @@ const Header = () => {
 				</menu>
 				<div className='links'>
 					<a href='tel:+48 792 856 627'>+48 792 856 627</a>
-					<a href='https://www.facebook.com' target='_blank' rel='noreferrer'>
+					<a
+						href='https://www.facebook.com/ruslanaprokopcuk'
+						target='_blank'
+						rel='noreferrer'>
 						<svg
 							width='25'
 							height='24'
@@ -53,7 +57,10 @@ const Header = () => {
 							/>
 						</svg>
 					</a>
-					<a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
+					<a
+						href='https://www.instagram.com/prokopchukruslana/?hl=en'
+						target='_blank'
+						rel='noreferrer'>
 						<svg
 							width='25'
 							height='24'

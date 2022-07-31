@@ -9,6 +9,18 @@ export const HeaderStyled = styled.header`
 	margin-bottom: 2rem;
 	display: flex;
 	gap: 15px;
+
+	.main-logo {
+		padding: 10px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.5s ease;
+		&:hover {
+			background-color: black;
+		}
+	}
 	.header-cnt {
 		display: flex;
 		align-items: center;
@@ -16,9 +28,13 @@ export const HeaderStyled = styled.header`
 	}
 	menu {
 		display: flex;
-		gap: 20px;
+		gap: 40px;
 		flex-wrap: wrap;
 		margin-right: 15px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 20px;
+		}
 	}
 	span {
 		cursor: pointer;
@@ -40,5 +56,14 @@ export const HeaderStyled = styled.header`
 		gap: 20px;
 		align-items: center;
 		flex-wrap: wrap;
+	}
+	.links a {
+		padding: 10px;
+		border-radius: 200px;
+		transition: all 0.5s ease;
+
+		&:hover {
+			background-color: black;
+		}
 	}
 `;

@@ -33,7 +33,10 @@ const Footer = () => {
 					/>
 				</svg>
 			</a>
-			<a href='https://www.facebook.com' target='_blank' rel='noreferrer'>
+			<a
+				href='https://www.facebook.com/ruslanaprokopcuk'
+				target='_blank'
+				rel='noreferrer'>
 				<svg
 					width='36'
 					height='34'
@@ -46,7 +49,10 @@ const Footer = () => {
 					/>
 				</svg>
 			</a>
-			<a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
+			<a
+				href='https://www.instagram.com/prokopchukruslana/?hl=en'
+				target='_blank'
+				rel='noreferrer'>
 				<svg
 					width='36'
 					height='34'
