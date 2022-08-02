@@ -5,7 +5,6 @@ import {
 	MainContent,
 } from '../components/styledcomponents/SectionMain';
 import { getCats, getKittys } from '../services';
-import styles from '../styles/Home.module.css';
 import kitty from '../public/main-cat.webp';
 
 export default function Home() {

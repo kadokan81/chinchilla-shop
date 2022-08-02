@@ -7,18 +7,21 @@ export const BackButton = styled.span`
 	align-items: center;
 	gap: 5px;
 	background-color: #323232;
-	color: gray;
+	color: #fff;
 	padding: 0.5rem 1rem;
 	transition: all 0.3s;
 
-	svg path {
-		transition: all 0.3s;
-		fill: gray;
-	}
-	:hover {
-		color: #fff;
+	@media (any-hover: hover) {
+		color: gray;
 		svg path {
-			fill: #fff;
+			transition: all 0.3s;
+			fill: gray;
+		}
+		&:hover {
+			color: #fff;
+			svg path {
+				fill: #fff;
+			}
 		}
 	}
 `;

@@ -95,7 +95,6 @@ const KittyPage = ({ kitty }) => {
 export default KittyPage;
 
 export async function getStaticProps({ params }) {
-	console.log('params', params);
 	const data = await getKittyDetails(params.id);
 
 	return {

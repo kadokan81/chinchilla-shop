@@ -54,6 +54,7 @@ export const HeaderStyled = styled.header`
 	.links {
 		display: flex;
 		gap: 20px;
+		row-gap: 0px;
 		align-items: center;
 		flex-wrap: wrap;
 	}
