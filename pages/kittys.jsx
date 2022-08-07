@@ -5,7 +5,7 @@ import { getKittys } from '../services';
 
 const Kittys = ({ kittys }) => {
 	return (
-		<div>
+		<div style={{ padding: '20px' }}>
 			{kittys.map((kitty) => (
 				<Link href={`kittys/${kitty.node.id}`} key={kitty.node.id}>
 					<CatCart>
@@ -13,12 +13,12 @@ const Kittys = ({ kittys }) => {
 							<Image
 								src={kitty.node.photo[0].url}
 								alt={kitty.node.breed}
-								width={'100%'}
-								height={'100%'}
+								width={300}
+								height={200}
 								layout='responsive'
 							/>
 						</div>
-						<div>
+						<div className='content'>
 							<h2 className='cart-content__title'>
 								<span>Breed: </span>
 								{kitty.node.breed}

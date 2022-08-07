@@ -20,7 +20,7 @@ const CatsPage = ({ cats }) => {
 							/>
 						</div>
 
-						<div className='cart-content'>
+						<div className='content'>
 							<h2 className='cart-content__title'>
 								<span>Name:</span> {cat.node.name}
 							</h2>

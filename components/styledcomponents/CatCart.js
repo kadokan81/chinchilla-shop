@@ -12,8 +12,10 @@ export const CatCart = styled.div`
 	box-shadow: 3px 5px 10px #dcd7c9;
 
 	border-radius: 10px;
+	padding: 20px;
 	color: #323232;
 	transition: all 0.3s ease-in-out;
+
 	:hover {
 		transform: translateY(-5px);
 		box-shadow: 13px 15px 16px #dcd7c9;
@@ -21,7 +23,7 @@ export const CatCart = styled.div`
 	.img-link {
 		flex: 0 1 45%;
 
-		padding-left: 10px;
+		display: block;
 		border-radius: 10px;
 		overflow: hidden;
 	}
@@ -34,7 +36,24 @@ export const CatCart = styled.div`
 
 	@media (max-width: 768px) {
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
+		height: 100%;
+		padding: 0px;
+
+		.img-link {
+			width: 100%;
+			height: 100%;
+			border-radius: 10px 10px 0px 0px;
+		}
+		.img-link img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px 10px 0px 0px;
+		}
+		.content {
+			padding: 20px;
+		}
 	}
 	&:not(:last-child) {
 		margin-bottom: 2rem;
