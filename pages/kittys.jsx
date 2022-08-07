@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { CatCart } from '../components/styledcomponents/CatCart';
 import { getKittys } from '../services';
@@ -9,7 +10,13 @@ const Kittys = ({ kittys }) => {
 				<Link href={`kittys/${kitty.node.id}`} key={kitty.node.id}>
 					<CatCart>
 						<div className='img-link'>
-							<img src={kitty.node.photo[0].url} />
+							<Image
+								src={kitty.node.photo[0].url}
+								alt={kitty.node.breed}
+								width={'100%'}
+								height={'100%'}
+								layout='responsive'
+							/>
 						</div>
 						<div>
 							<h2 className='cart-content__title'>

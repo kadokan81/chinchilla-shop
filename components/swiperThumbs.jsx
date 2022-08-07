@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+import Image from 'next/image';
 
 const SwiperThumb = ({ photos }) => {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -31,7 +32,7 @@ const SwiperThumb = ({ photos }) => {
 			>
 				{photos.map((photo, ind) => (
 					<SwiperSlide key={ind}>
-						<img src={photo.url} alt='' width={'100%'} height={'100%'} />
+						<Image src={photo.url} alt='cat' layout='fill' />
 					</SwiperSlide>
 				))}
 			</Swiper>
