@@ -47,7 +47,7 @@ const SwiperThumb = ({ photos }) => {
 				className='mySwiper'>
 				{photos.map((photo, ind) => (
 					<SwiperSlide key={ind}>
-						<img src={photo.url} alt='' width={'100%'} height={'100%'} />
+						<Image src={photo.url} alt='cat' layout='fill' />
 					</SwiperSlide>
 				))}
 			</Swiper>
